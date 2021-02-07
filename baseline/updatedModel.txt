@@ -1,0 +1,215 @@
+Net(
+  (resnet): ResNet(
+    (conv1): Conv2d(18, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace=True)
+    (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (layer1): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer2): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer3): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (layer4): Sequential(
+      (0): BasicBlock(
+        (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (1): BasicBlock(
+        (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+    (fc): Sequential(
+      (0): Linear(in_features=512, out_features=640000, bias=True)
+      (1): Sigmoid()
+    )
+  )
+)
+Epoch:0 total training loss: 0.4098175517308018 
+
+Epoch:0 total validation loss: 0.45215783250473796 total iou: 0.7044504265193091
+
+
+Saved model to model1/resnet18_model2_0.pth
+Epoch:1 total training loss: 0.3609760307495004 
+
+Epoch:1 total validation loss: 0.41973713637580945 total iou: 0.7100556533918403
+
+
+Saved model to model1/resnet18_model2_1.pth
+Epoch:2 total training loss: 0.30499935726063554 
+
+Epoch:2 total validation loss: 0.3985841144763288 total iou: 0.7113642548159735
+
+
+Saved model to model1/resnet18_model2_2.pth
+Epoch:3 total training loss: 0.25224498101687504 
+
+Epoch:3 total validation loss: 0.39930385535967255 total iou: 0.736172642780453
+
+
+Saved model to model1/resnet18_model2_3.pth
+Epoch:4 total training loss: 0.21476840357131094 
+
+Epoch:4 total validation loss: 0.37218262692765586 total iou: 0.74443465261696
+
+
+Saved model to model1/resnet18_model2_4.pth
+Epoch:5 total training loss: 0.18013168796071555 
+
+Epoch:5 total validation loss: 0.3742345568857023 total iou: 0.7450681103558783
+
+
+Saved model to model1/resnet18_model2_5.pth
+Epoch:6 total training loss: 0.150722828867079 
+
+Epoch:6 total validation loss: 0.3408444896636028 total iou: 0.7679983851970028
+
+
+Saved model to model1/resnet18_model2_6.pth
+Epoch:7 total training loss: 0.12754845239589158 
+
+Epoch:7 total validation loss: 0.37032877035912065 total iou: 0.7652580196085492
+
+
+Saved model to model1/resnet18_model2_7.pth
+Epoch:8 total training loss: 0.1092968977105104 
+
+Epoch:8 total validation loss: 0.36695255445582525 total iou: 0.7637233818100242
+
+
+Saved model to model1/resnet18_model2_8.pth
+Epoch:9 total training loss: 0.09512527187899367 
+
+Epoch:9 total validation loss: 0.3858726265736752 total iou: 0.7614215296201639
+
+
+Saved model to model1/resnet18_model2_9.pth
+Epoch:10 total training loss: 0.08418121396270753 
+
+Epoch:10 total validation loss: 0.39888706766364596 total iou: 0.758960608348732
+
+
+Saved model to model1/resnet18_model2_10.pth
+Epoch:11 total training loss: 0.07540055329083876 
+
+Epoch:11 total validation loss: 0.3916507611080768 total iou: 0.7694330250319243
+
+
+Saved model to model1/resnet18_model2_11.pth
+Epoch:12 total training loss: 0.06807056219867066 
+
+Epoch:12 total validation loss: 0.3614704485480038 total iou: 0.7736231421424453
+
+
+Saved model to model1/resnet18_model2_12.pth
+Epoch:13 total training loss: 0.06227641143269711 
+
+Epoch:13 total validation loss: 0.38511804018228774 total iou: 0.7667802554853371
+
+
+Saved model to model1/resnet18_model2_13.pth
+Epoch:14 total training loss: 0.057939971404651514 
+
+Epoch:14 total validation loss: 0.3876237452828458 total iou: 0.7671684286523933
+
+
+Saved model to model1/resnet18_model2_14.pth
+Epoch:15 total training loss: 0.05371548287110359 
+
+Epoch:15 total validation loss: 0.3772122354823209 total iou: 0.7714064605178291
+
+
+Saved model to model1/resnet18_model2_15.pth
+Epoch:16 total training loss: 0.05056295833553781 
+
+Epoch:16 total validation loss: 0.38447143218760926 total iou: 0.7747153248111536
+
+
+Saved model to model1/resnet18_model2_16.pth
+Epoch:17 total training loss: 0.04741843477461737 
+
+Epoch:17 total validation loss: 0.3789945618500785 total iou: 0.7677024970388141
+
+
+Saved model to model1/resnet18_model2_17.pth
+Epoch:18 total training loss: 0.04483929217989229 
+
+Epoch:18 total validation loss: 0.3715950187502636 total iou: 0.7740579886982502
+
+
+Saved model to model1/resnet18_model2_18.pth
+Epoch:19 total training loss: 0.04236952395253216 
+
+Epoch:19 total validation loss: 0.3843145058268592 total iou: 0.7693067870935435
+
+
+Saved model to model1/resnet18_model2_19.pth
+Epoch:20 total training loss: 0.039935198301338855 
+
+Epoch:20 total validation loss: 0.39082010628448594 total iou: 0.7772674571403295
+
+
+Saved model to model1/resnet18_model2_20.pth
