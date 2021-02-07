@@ -1,0 +1,128 @@
+GPU 0: Tesla K80 (UUID: GPU-88f6fad0-73af-21b5-62cf-86ff04e9131c)
+
+Jupyter server is running on: gpu-01
+Job starts at: Wed Apr 29 20:30:13 EDT 2020
+
+Step 1 :
+
+If you are working in NYU campus, please open an iTerm window, run command
+
+ssh -L 8223:localhost:8223 sga297@prince.hpc.nyu.edu
+
+If you are working off campus, you should already have ssh tunneling setup through HPC bastion host, 
+that you can directly login to prince with command
+
+ssh sga297@prince
+
+Please open an iTerm window, run command
+
+ssh -L 8223:localhost:8223 sga297@prince
+
+Step 2:
+
+Keep the iTerm windows in the previouse step open. Now open browser, find the line with
+
+The Jupyter Notebook is running at: gpu-01
+
+the URL is something: http://localhost:8223/?token=XXXXXXXX (see your token below)
+
+you should be able to connect to jupyter notebook running remotly on prince compute node with above url
+
+[I 20:30:14.545 NotebookApp] Serving notebooks from local directory: /scratch/sga297/dlProject/DLFrnn/Frnn/SimClr/SimclrGPU
+[I 20:30:14.545 NotebookApp] The Jupyter Notebook is running at:
+[I 20:30:14.546 NotebookApp] http://localhost:8223/?token=7d724803d98f1e17ce2686b8f7f2c6db8ca061185f779383
+[I 20:30:14.546 NotebookApp]  or http://127.0.0.1:8223/?token=7d724803d98f1e17ce2686b8f7f2c6db8ca061185f779383
+[I 20:30:14.546 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 20:30:14.562 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/sga297/.local/share/jupyter/runtime/nbserver-146425-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8223/?token=7d724803d98f1e17ce2686b8f7f2c6db8ca061185f779383
+     or http://127.0.0.1:8223/?token=7d724803d98f1e17ce2686b8f7f2c6db8ca061185f779383
+[I 20:32:24.425 NotebookApp] 302 GET /?token=7d724803d98f1e17ce2686b8f7f2c6db8ca061185f779383 (::1) 1.02ms
+[W 20:32:33.985 NotebookApp] delete /gowri1.out
+[W 20:32:33.985 NotebookApp] Skipping trash for /scratch/sga297/dlProject/DLFrnn/Frnn/SimClr/SimclrGPU/gowri1.out, on different device to home directory
+[W 20:32:33.991 NotebookApp] delete /runJup.sh
+[W 20:32:33.992 NotebookApp] Skipping trash for /scratch/sga297/dlProject/DLFrnn/Frnn/SimClr/SimclrGPU/runJup.sh, on different device to home directory
+[W 20:32:41.129 NotebookApp] Notebook SimCLR_Notebook.ipynb is not trusted
+[I 20:32:42.626 NotebookApp] Kernel started: 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0
+[I 20:34:41.947 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[W 20:34:41.949 NotebookApp] Notebook SimCLR_Notebook.ipynb is not trusted
+[I 20:36:41.927 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[W 20:36:41.928 NotebookApp] Notebook SimCLR_Notebook.ipynb is not trusted
+[I 20:38:41.991 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[W 20:38:41.993 NotebookApp] Notebook SimCLR_Notebook.ipynb is not trusted
+[I 20:40:41.911 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[W 20:40:41.912 NotebookApp] Notebook SimCLR_Notebook.ipynb is not trusted
+[I 20:42:43.066 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[W 20:42:43.068 NotebookApp] Notebook SimCLR_Notebook.ipynb is not trusted
+[I 20:44:41.934 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[W 20:44:41.935 NotebookApp] Notebook SimCLR_Notebook.ipynb is not trusted
+[I 20:46:42.855 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[W 20:46:42.856 NotebookApp] Notebook SimCLR_Notebook.ipynb is not trusted
+[I 20:50:26.329 NotebookApp] Saving file at /SimCLR/modules/simclr.py
+[I 20:50:27.960 NotebookApp] Saving file at /SimCLR/modules/simclr.py
+[I 20:50:48.150 NotebookApp] Saving file at /SimCLR/modules/simclr.py
+[I 20:51:14.721 NotebookApp] Starting buffering for 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0:851d82351bd94e428d4b373254911694
+[I 20:51:16.639 NotebookApp] Kernel restarted: 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0
+[I 20:51:17.526 NotebookApp] Restoring connection for 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0:851d82351bd94e428d4b373254911694
+[I 20:51:17.526 NotebookApp] Replaying 5 buffered messages
+[I 20:52:41.911 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 20:54:41.911 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 20:56:41.906 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 20:58:42.021 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:00:43.325 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:02:43.267 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:04:43.137 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:06:42.981 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:08:43.066 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:10:41.940 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:12:41.939 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:14:41.937 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:16:41.939 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:18:41.942 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:20:41.946 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:22:41.943 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:24:41.955 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[W 21:29:22.299 NotebookApp] delete /SimCLR/logs/checkpoint_1.tar
+[W 21:29:22.300 NotebookApp] Skipping trash for /scratch/sga297/dlProject/DLFrnn/Frnn/SimClr/SimclrGPU/SimCLR/logs/checkpoint_1.tar, on different device to home directory
+[W 21:29:22.349 NotebookApp] delete /SimCLR/logs/checkpoint_0.tar
+[W 21:29:22.350 NotebookApp] Skipping trash for /scratch/sga297/dlProject/DLFrnn/Frnn/SimClr/SimclrGPU/SimCLR/logs/checkpoint_0.tar, on different device to home directory
+[I 21:30:41.967 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:30:52.043 NotebookApp] Starting buffering for 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0:851d82351bd94e428d4b373254911694
+[I 21:30:56.289 NotebookApp] Kernel restarted: 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0
+[I 21:30:57.277 NotebookApp] Restoring connection for 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0:851d82351bd94e428d4b373254911694
+[I 21:30:57.277 NotebookApp] Replaying 6 buffered messages
+[I 21:32:16.668 NotebookApp] Starting buffering for 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0:851d82351bd94e428d4b373254911694
+[I 21:32:17.082 NotebookApp] Kernel restarted: 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0
+[I 21:32:17.894 NotebookApp] Restoring connection for 7ddcae7c-cf5a-4b1f-a79d-c9d646ee2ea0:851d82351bd94e428d4b373254911694
+[I 21:32:17.894 NotebookApp] Replaying 6 buffered messages
+[I 21:32:43.040 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:34:42.951 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:36:42.869 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:38:41.955 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:40:42.886 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:42:42.917 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:44:41.969 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:46:10.127 NotebookApp] Creating new directory in /SimCLR/logs
+[I 21:46:41.956 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:48:43.035 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:50:42.899 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:52:42.957 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:54:43.228 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:56:43.146 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 21:58:43.074 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:00:43.177 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:02:42.917 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:04:43.350 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:12:41.988 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:14:42.003 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:16:42.007 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:20:42.937 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:25:25.379 NotebookApp] Saving file at /SimCLR/modules/transformations/simclr.py
+[I 22:26:43.063 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:30:43.135 NotebookApp] Saving file at /SimCLR_Notebook.ipynb
+[I 22:36:07.713 NotebookApp] Saving file at /SimCLR/model.py
+[I 22:36:58.699 NotebookApp] Saving file at /SimCLR/model.py
+slurmstepd: error: *** JOB 9298574 ON gpu-01 CANCELLED AT 2020-04-29T22:40:35 ***
